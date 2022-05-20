@@ -31,10 +31,10 @@ export default function Parent () {
     const onSubmit = () => {
         const err = validate();
         if (Object.keys(err).length) {
-            setResult(`Error happens.`)
+            setResult(`Error happens.`);
         }
         else {
-            setResult(`Name is ${name}, and age is ${age}.`)
+            setResult(`Name is ${name}, and age is ${age}.`);
         }
     };
 

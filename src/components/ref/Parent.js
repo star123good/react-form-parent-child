@@ -10,10 +10,10 @@ export default function Parent () {
     const onSubmit = () => {
         const {result, error} = ref.current.handleSubmit();
         if (Object.keys(error).length) {
-            setResult(`Error happens.`)
+            setResult(`Error happens.`);
         }
         else {
-            setResult(`Name is ${result.name}, and age is ${result.age}.`)
+            setResult(`Name is ${result.name}, and age is ${result.age}.`);
         }
     };
 
