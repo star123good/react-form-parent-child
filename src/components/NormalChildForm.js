@@ -4,8 +4,6 @@ export default function NormalChildForm ({
     name, setName, errorName, age, setAge, errorAge, 
 }) {
     
-    
-
     const handleChangeName = (e) => {
         setName(e.target.value);
     };
