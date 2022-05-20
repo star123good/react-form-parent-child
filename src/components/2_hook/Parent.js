@@ -1,29 +1,32 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import ChildForm from "./ChildForm";
 
 export default function Parent () {
 
-    const ref = useRef(null);
+    const { register, handleSubmit, formState: { errors }} = useForm();
 
     const [result, setResult] = useState('');
 
-    const onSubmit = () => {
-        const {result, error} = ref.current.handleSubmit();
-        if (Object.keys(error).length) {
+    const onSubmit = (data) => {
+        if (Object.keys(errors).length) {
             setResult(`Error happens.`);
         }
         else {
-            setResult(`Name is ${result.name}, and age is ${result.age}.`);
+            setResult(`Name is ${data.name}, and age is ${data.age}.`);
         }
     };
 
     return (
         <div className="panel">
             <div className="row">{result}</div>
-            <ChildForm
-                ref={ref}
-            />
-            <button onClick={onSubmit} >Submit</button>
+            <form onSubmit={handleSubmit(onSubmit)} >
+                <ChildForm
+                    register={register}
+                    errors={errors}
+                />
+                <input type="submit" value="Submit" />
+            </form>
         </div>
     );
 }

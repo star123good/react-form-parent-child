@@ -11,7 +11,8 @@ export default function useForm () {
     const [submit, onSubmit] = useState(false);
 
     const validate = (callback) => {
-        callback(values);
+        const error = callback(values);
+        setErrors(error);
     }
 
     useEffect(() => {
