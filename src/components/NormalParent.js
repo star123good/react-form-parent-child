@@ -48,8 +48,8 @@ export default function NormalParent () {
                 age={age}
                 setAge={setAge}
                 errorAge={errorAge}
-                onSubmit={onSubmit}
             />
+            <button onClick={onSubmit} >Submit</button>
         </div>
     );
 }

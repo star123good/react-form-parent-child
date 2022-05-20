@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function NormalChildForm ({
-    name, setName, errorName, age, setAge, errorAge, onSubmit,
+    name, setName, errorName, age, setAge, errorAge, 
 }) {
     
     
@@ -24,7 +24,6 @@ export default function NormalChildForm ({
                 <div>Age: <input type="number" value={age} onChange={handleChangeAge} /></div>
                 <div className="error">{errorAge}</div>
             </div>
-            <button onClick={onSubmit} >Submit</button>
         </div>
     );
 }
