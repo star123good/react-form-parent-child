@@ -5,8 +5,8 @@ export default function Parent () {
 
     const [name, setName] = useState('');
     const [errorName, setErrorName] = useState('');
-    const [errorAge, setErrorAge] = useState('');
     const [age, setAge] = useState(0);
+    const [errorAge, setErrorAge] = useState('');
     const [result, setResult] = useState('');
 
     const validate = () => {
