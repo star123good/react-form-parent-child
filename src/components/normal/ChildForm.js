@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function NormalChildForm ({
+export default function ChildForm ({
     name, setName, errorName, age, setAge, errorAge, 
 }) {
     

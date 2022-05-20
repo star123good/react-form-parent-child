@@ -1,6 +1,6 @@
 import React, { useState, forwardRef, useImperativeHandle } from "react";
 
-const RefChildForm = forwardRef((props, ref) => {
+const ChildForm = forwardRef((props, ref) => {
     
     const [name, setName] = useState('');
     const [errorName, setErrorName] = useState('');
@@ -62,4 +62,4 @@ const RefChildForm = forwardRef((props, ref) => {
     );
 });
 
-export default RefChildForm;
+export default ChildForm;

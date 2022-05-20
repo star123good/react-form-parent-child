@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
-import RefChildForm from "./RefChildForm";
+import ChildForm from "./ChildForm";
 
-export default function RefParent () {
+export default function Parent () {
 
     const ref = useRef(null);
 
@@ -20,7 +20,7 @@ export default function RefParent () {
     return (
         <div className="panel">
             <div className="row">{result}</div>
-            <RefChildForm
+            <ChildForm
                 ref={ref}
             />
             <button onClick={onSubmit} >Submit</button>

@@ -1,5 +1,5 @@
-import NormalParent from './components/NormalParent';
-import RefParent from './components/RefParent';
+import NormalParent from './components/normal/Parent';
+import RefParent from './components/ref/Parent';
 import './App.css';
 
 function App() {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import NormalChildForm from "./NormalChildForm";
+import ChildForm from "./ChildForm";
 
-export default function NormalParent () {
+export default function Parent () {
 
     const [name, setName] = useState('');
     const [errorName, setErrorName] = useState('');
@@ -41,7 +41,7 @@ export default function NormalParent () {
     return (
         <div className="panel">
             <div className="row">{result}</div>
-            <NormalChildForm
+            <ChildForm
                 name={name}
                 setName={setName}
                 errorName={errorName}
