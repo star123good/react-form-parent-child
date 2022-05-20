@@ -7,7 +7,8 @@ React Project for Parent component to control Children Form
 2. By using Custom Hook, e.g. useValidation -> Not available.
    Instead of it, use react-hook-form
 3. By using props (Normal Way)
-4. By using HOC e.g. withValidation
+4. By using HOC e.g. withValidation -> Not available.
+   In order to use HOC, it needs useRef
 5. By using Redux
 6. By using Context
 
