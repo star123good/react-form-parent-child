@@ -30,7 +30,6 @@ const slice = createSlice({
             else {
                 state.errorAge = '';
             }
-            return state;
         },
     }
 });
