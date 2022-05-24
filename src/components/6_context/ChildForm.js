@@ -1,5 +1,5 @@
 import React, { useContext} from "react";
-import FormContext from "../../contexts/form";
+import FormContext from "@contexts/form";
 
 export default function ChildForm () {
     

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { validate } from "../../reducers/form";
+import { validate } from "@reducers/form";
 import ChildForm from "./ChildForm";
 
 export default function Parent () {

@@ -1,5 +1,5 @@
 import React from "react";
-import withValidation from "../../hoc/withValidation";
+import withValidation from "@hoc/withValidation";
 
 const ChildForm = ({
     values={}, setValues, errors={}, 

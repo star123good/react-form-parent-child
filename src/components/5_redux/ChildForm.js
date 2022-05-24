@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setName, setAge } from "../../reducers/form";
+import { setName, setAge } from "@reducers/form";
 
 export default function ChildForm () {
     
